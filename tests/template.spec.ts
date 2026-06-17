@@ -86,9 +86,9 @@ test('submissão completa da prova', async ({ browser }) => {
 
   //Questão 16
   await page.getByRole('radio', { name: 'A porcentagem do código de produção executada pela suite de teste'}).click();
-
+  await page.getByRole('button', {name: 'Enviar'}).click();
 
   // Confirmar envio
   // Remover o comentário quando terminar de escrever o código
-  // await expect(page.getByRole('heading', { name: 'Prova enviada!' })).toBeVisible();
+ await expect(page.getByRole('heading', { name: 'Prova enviada!' })).toBeVisible();
 });
