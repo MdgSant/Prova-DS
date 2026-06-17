@@ -29,7 +29,7 @@ test('submissão completa da prova', async ({ browser }) => {
   await page.getByRole('button', {name: 'Próxima'}).click();
 
   //Questão 2
-  await page.getByRole('radio', { name: 'Retornar uma função de limpeza'}).click();
+  await page.getByRole('radio', { name: 'Incluir na lista de dependências um valor que é reatribuído dentro do próprio efeito'}).click();
   await page.getByRole('button', {name: 'Próxima'}).click();
 
   //Questão 3
@@ -45,7 +45,7 @@ test('submissão completa da prova', async ({ browser }) => {
   await page.getByRole('button', {name: 'Próxima'}).click();
 
   //Questão 6
-  await page.getByRole('radio', { name: 'Porque são os mais rápidos de executar'}).click();
+  await page.getByRole('radio', { name: 'Porque cobrem mais casos extremos'}).click();
   await page.getByRole('button', {name: 'Próxima'}).click();
 
   //Questão 7
